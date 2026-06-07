@@ -1,1 +1,0 @@
-import{i as e,n as t,r as n,s as r}from"./index-AEfjrMbE.js";var i={};function a(t,i){return r(),e(`main`,null,[...i[0]||=[n(`h1`,null,`Catering page coming soon!`,-1)]])}var o=t(i,[[`render`,a]]);export{o as default};
