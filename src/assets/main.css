@@ -1,0 +1,50 @@
+@import './base.css';
+@import "tailwindcss";
+
+#app {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  font-weight: normal;
+  --color-primary: #F7F4EF;
+  --color-secondary: #1A2F3B;
+  --color-accent-orange: #E28743;
+  --color-accent-green: hsla(160, 100%, 37%, 1);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-accent-orange {
+  color: var(--color-accent-orange);
+}
+.color-accent-green {
+  color: var(--color-accent-green);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-accent-orange {
+  background-color: var(--color-accent-orange);
+}
+.bg-accent-green {
+  background-color: var(--color-accent-green);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  font-weight: 500;
+  width: fit-content;
+}
+a:hover {
+  text-decoration: underline wavy var(--color-accent-green);
+  text-underline-offset: 3px;
+}
+
+
