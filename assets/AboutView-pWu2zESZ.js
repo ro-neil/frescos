@@ -1,1 +1,0 @@
-import{a as e,i as t,o as n,r,s as i,t as a}from"./index-BQ10cM6Y.js";var o={class:`about`},s=n({__name:`AboutView`,setup(n){return(n,s)=>(i(),t(`div`,o,[e(a),s[0]||=r(`h1`,null,`This is an about page`,-1)]))}});export{s as default};
