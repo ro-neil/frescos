@@ -1,0 +1,1 @@
+import{a as e,c as t,i as n,n as r,o as i,s as a}from"./index-DTlZb46A.js";var o={class:`about`},s=a({__name:`AboutView`,setup(a){return(a,s)=>(t(),e(`div`,o,[i(r),s[0]||=n(`h1`,null,`This is an about page`,-1)]))}});export{s as default};
