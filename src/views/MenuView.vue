@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/utils/TheWelcome.vue/index.js'
+import Leadtext from '@/components/landing-page/Leadtext.vue';
 </script>
 
 <template>
   <main>
-    <h1>Food menu coming soon!</h1>
+    <Leadtext :text="'Food menu coming soon!'" />
   </main>
 </template>
