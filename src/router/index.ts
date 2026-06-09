@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomePageView from '@/components/landing-page/HomePageView.vue'
 
 export const routes = [
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: HomePageView,
     },
     {
       path: '/menu',

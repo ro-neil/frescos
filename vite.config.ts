@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/frescos/',
   plugins: [
     vue(),
     vueDevTools(),
@@ -16,5 +17,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
-  },
+  }
 })
