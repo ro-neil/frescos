@@ -5,18 +5,24 @@ import veganSalad from '@/assets/images/home/vegan-salad.jpg';
 import Leadtext from './Leadtext.vue';
 import Subtext from './Subtext.vue';
 
-const leadText: string = 'Event Spotlight';
-const subtext: string = 'A local George Town favorite, serving up delicious meals in a relaxed and welcoming atmosphere for over 20\
-      years. Our menu features a fusion of caribbean and international flavors, crafted with fresh, locally sourced\
-      ingredients.';
+const leadText: string = "Host Your Next Gathering With Us";
+const subtext1: string = 'Event Spotlight';
+const subtext2: string = "From intimate group celebrations in our comfy, air-conditioned \
+Private Dining Room, to large-scale island catering, \
+Fresco's provides bespoke menus and seamless service to your special event.";
+const subtext3: string = "Let's create an unforgettable experience for you!";
+const exploreCateringText: string = 'Explore Catering & Private Dining';
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 py-16 mb-4 sm:!mb-8 bg-gray-200">
+  <ContentBlock class="sm:px-6 px-4 py-16 mb-4 sm:!mb-8 bg-slate-700 !text-white">
     <template #first>
       <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
+        <Subtext :text="subtext1" class="!font-bold text-orange-200"/>
         <Leadtext :text="leadText" class=""/>
-        <Subtext :text="subtext" />
+        <Subtext :text="subtext2" />
+        <Subtext :text="subtext3" class="!mb-3"/>
+        <Link :to="'/catering'" :text="exploreCateringText" class="hover:!no-underline bg-white text-slate-800 border-white hover:!bg-transparent hover:!text-white" />
       </div>
     </template>
     <!-- <template #second>
