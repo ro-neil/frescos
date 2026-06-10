@@ -11,19 +11,19 @@ const leadtext: string = 'Experience Real Taste';
 const subtext: string = 'Our casual, cozy, family-friendly indoor and outdoor seating options welcome tourists and locals alike. \
 We offer a wide range of local specialties alongside international favorites, ensuring there is something to love for everyone, \
 including dedicated vegetarian and vegan dishes.';
-const images: Array<string> = [salmonDishPhoto3, salmonDishPhoto2, salmonDishPhoto ];
+const images: Array<string> = [salmonDishPhoto3, salmonDishPhoto2, salmonDishPhoto];
 
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 pb-4 my-8">
+  <ContentBlock class="sm:px-6 px-4 pb-4 my-8 lg:gap-8">
     <template #first>
-      <div class="flex items-center justify-center  w-full !p-5">
-        <ImagePot :images='images' :item-class="'shadow-md shadow-orange-300/75'"/>
+      <div class="flex items-center justify-center w-full sm:items-start">
+        <ImagePot :images='images' :item-class="'shadow-lg shadow-orange-400'"/>
       </div>  
     </template>
     <template #second>
-      <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
+      <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-end sm:text-right">
         <Leadtext :text="leadtext" class=""/>
         <Subtext :text="subtext"/>
       </div>

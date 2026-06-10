@@ -39,7 +39,7 @@ const cornerClasses = [
       v-for="(img, index) in images" 
       :key="index"
       :class="[
-        'overflow-hidden bg-gray-100 transition-all duration-300 border-1 border-gray-300', 
+        'overflow-hidden transition-all duration-300', 
         cornerClasses[index], 
         itemClass
       ]"
@@ -47,7 +47,7 @@ const cornerClasses = [
       <img 
         :src="img" 
         :alt="`Grid image ${index + 1}`" 
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover saturate-200"
       />
     </div>
   </div>
