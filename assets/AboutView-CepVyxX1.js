@@ -1,1 +1,0 @@
-import{a as e,i as t,n,o as r,r as i,s as a}from"./index-BOlJzCrU.js";var o={class:`about`},s=r({__name:`AboutView`,setup(r){return(r,s)=>(a(),t(`div`,o,[e(n),s[0]||=i(`h1`,null,`About Fresco's`,-1)]))}});export{s as default};
