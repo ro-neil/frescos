@@ -1,1 +1,0 @@
-import{a as e,c as t,o as n,s as r,t as i}from"./index-fzesA4ja.js";var a=r({__name:`MenuView`,setup(r){return(r,a)=>(t(),e(`main`,null,[n(i,{text:`Food menu coming soon!`})]))}});export{a as default};
