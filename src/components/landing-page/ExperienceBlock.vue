@@ -11,7 +11,7 @@ const subtext: string = 'Our casual, cozy, family-friendly indoor and outdoor se
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 md:gap-8 bg-[#FDFBF6] sm:flex-col! lg:flex-row!">
+  <ContentBlock class="sm:px-6 px-4 md:gap-8 bg-[#FDFBF6] dark:bg-gray-800 sm:flex-col! lg:flex-row!">
     <template #first>
       <div class="w-full grid grid-cols-2 gap-4 sm:gap-6">
         <div

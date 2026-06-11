@@ -28,6 +28,7 @@ const emailInput = ref('');
 
 const handleSubmit = () => {
   if (emailInput.value.trim()) {
+    alert('Subscribed!')
     emit('subscribe', emailInput.value);
     emailInput.value = ''; // clear input after submission
   }
@@ -35,7 +36,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <footer class="w-full flex justify-center pt-8 pb-3 md:pt-12 px-4 sm:px-6 transition-colors duration-300 dark:bg-slate-950">
+  <footer class="w-full flex justify-center pt-8 pb-3 md:pt-12 px-4 sm:px-6 transition-colors duration-300">
     <div class="flex flex-col align-center gap-3 text-center ">
       
       <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 mb-3 tracking-tight">
@@ -45,7 +46,7 @@ const handleSubmit = () => {
 
       <form 
         @submit.prevent="handleSubmit" 
-        class="flex flex-col sm:flex-row gap-3 mb-10 max-w-3xl sm:mx-auto"
+        class="flex flex-col sm:flex-row gap-4 mb-10 max-w-3xl sm:mx-auto mt-3!"
       >
         <label class="sr-only" for="email-input">Email address</label>
         <input 
@@ -54,7 +55,7 @@ const handleSubmit = () => {
           type="email" 
           required
           :placeholder="placeholder"
-          class="flex-1 px-4 py-2 rounded border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-800 focus:border-transparent transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:ring-slate-300"
+          class="flex-1 px-4 text-base sm:text-lg text-semibold py-2 rounded-md border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-800 focus:border-transparent transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:ring-slate-300"
         />
         
         <button 
