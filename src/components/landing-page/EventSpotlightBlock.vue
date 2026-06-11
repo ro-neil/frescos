@@ -9,7 +9,7 @@ import { routeMap } from '@/router/index.ts'
 
 const cateringRoute: string = String(routeMap.catering);
 const leadText: string = "Host Your Next Gathering With Us";
-const subtext1: string = 'Event Spotlight';
+const subtext1: string = 'Event Spotlight'.toUpperCase();
 const subtext2: string = "From intimate group celebrations in our comfy, air-conditioned \
 Private Dining Room, to large-scale island catering, \
 we provide bespoke menus and seamless service for your special event.";
