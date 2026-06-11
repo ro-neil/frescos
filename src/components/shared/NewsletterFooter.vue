@@ -35,7 +35,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <footer class="w-full flex justify-center pt-8 pb-4 md:pt-12 px-4 sm:px-6 transition-colors duration-300 dark:bg-slate-950">
+  <footer class="w-full flex justify-center pt-8 pb-3 md:pt-12 px-4 sm:px-6 transition-colors duration-300 dark:bg-slate-950">
     <div class="flex flex-col align-center gap-3 text-center ">
       
       <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 mb-3 tracking-tight">
@@ -68,8 +68,8 @@ const handleSubmit = () => {
         
       </form>
 
-      <div class="border-t border-slate-200 dark:border-slate-800 pt-2 mt-4! text-center">
-        <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
+      <div class="border-t border-slate-200 dark:border-slate-800 pt-3 mt-4! text-center">
+        <p class="text-xs text-sm text-slate-500 dark:text-slate-400 font-medium">
           {{ copyright }}
         </p>
       </div>
