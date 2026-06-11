@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import NavigationBar from '@/components/navigation/NavigationBar.vue'
+import NavigationBar from '@/components/shared/NavigationBar.vue'
 </script>
 
 <template>
   <div class="about">
     <NavigationBar />
-    <h1>This is an about page</h1>
+    <h1>About Fresco's</h1>
   </div>
 </template>
 
