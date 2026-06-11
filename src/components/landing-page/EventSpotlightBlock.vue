@@ -13,7 +13,7 @@ const subtext1: string = 'Event Spotlight';
 const subtext2: string = "From intimate group celebrations in our comfy, air-conditioned \
 Private Dining Room, to large-scale island catering, \
 we provide bespoke menus and seamless service for your special event.";
-const subtext3: string = "Let's create an unforgettable experience for you!";
+const subtext3: string = "Come and experience the unforgettable!";
 const exploreCateringText: string = 'Explore Catering & Private Dining';
 const shortLinks = [
   {
@@ -31,10 +31,10 @@ const shortLinks = [
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 py-16 mb-4 sm:!mb-8 bg-slate-700 !text-white">
+  <ContentBlock class="sm:px-6 px-4 md:gap-8 bg-slate-700 !text-white">
     <template #first>
       <div class="flex flex-col gap-4 justify-center items-center text-center sm:text-left sm:items-start w-full">
-        <Subtext :text="subtext1" class="!font-bold !text-sm text-orange-200" />
+        <Subtext :text="subtext1" class="font-bold! text-base! sm:text-lg!" />
         <Leadtext :text="leadText" class="" />
         <Subtext :text="subtext2" />
         <Subtext :text="subtext3" class="!mb-3" />
@@ -48,7 +48,7 @@ const shortLinks = [
           :to="cateringRoute" :icon-end="true"
           class="border-none hover:!no-underline !px-0 items-start group">
           <div class="flex flex-col gap-2">
-            <p class="font-bold text-orange-200 group-hover:underline">{{ link.title }}</p>
+            <p class="text-base sm:text-lg font-bold text-orange-300 group-hover:underline">{{ link.title }}</p>
             <Subtext :text="link.body" class="text-gray-100 text-pretty" />
             <hr class="text-slate-500/25 !mt-2" />
           </div>

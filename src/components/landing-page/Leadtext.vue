@@ -9,5 +9,5 @@ defineProps({
 </script>
 
 <template>
-	<h2 v-bind="$attrs" class="text-4xl md:text-5xl lg:text-7xl font-bold md:!mb-2 lg:!mb-4 text-shadow-xs text-shadow-gray-800">{{ text }}</h2>
+	<h2 v-bind="$attrs" class="text-4xl md:text-5xl lg:text-7xl font-bold mb-2 md:mb-3! lg:mb-6! text-shadow-xs text-shadow-gray-800 tracking-tighter">{{ text }}</h2>
 </template>

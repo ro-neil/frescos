@@ -47,7 +47,7 @@ const cornerClasses = [
       <img 
         :src="img" 
         :alt="`Grid image ${index + 1}`" 
-        class="w-full h-full object-cover saturate-200"
+        class="w-full h-full object-cover saturate-100"
       />
     </div>
   </div>

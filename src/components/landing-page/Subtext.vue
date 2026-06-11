@@ -10,5 +10,5 @@ defineProps({
 
 
 <template>
-	<p v-bind="$attrs" class="text-sm sm:text-base lg:text-lg font-normal max-w-lg mb-4">{{ text }}</p>
+	<p v-bind="$attrs" class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">{{ text }}</p>
 </template>
