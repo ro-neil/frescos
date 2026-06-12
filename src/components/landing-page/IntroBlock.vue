@@ -11,7 +11,7 @@ const subtext: string = 'A local George Town favorite, serving up delicious meal
       years. Our menu features a fusion of caribbean and international flavors, crafted with fresh, locally sourced\
       ingredients.';
 const bookEventText: string = 'Book Private Event';
-const viewMenuText: string = 'View Daily Menu';
+const viewMenuText: string = 'View Menu';
 </script>
 
 <template>
@@ -23,7 +23,7 @@ const viewMenuText: string = 'View Daily Menu';
         <div class="controls !mt-5 flex flex-col gap-4">
           <Link :to="'/catering'" :text="bookEventText" 
             class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
-            dark:hover:text-white! dark:hover:bg-orange-400/90" />
+            dark:hover:text-white! dark:hover:bg-transparent" />
           <Link to="/menu" :text="viewMenuText" :iconEnd="true" 
           class="border-none text-emerald-500! dark:text-emerald-400! py-0! sm:px-0! hover:text-emerald-600! dark:hover:text-emerald-500!" >
             <template #icon>

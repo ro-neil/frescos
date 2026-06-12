@@ -7,7 +7,8 @@ import Leadtext from './Leadtext.vue';
 import Subtext from './Subtext.vue';
 
 const leadtext: string = 'Experience Real Taste';
-const subtext: string = 'Our casual, cozy, family-friendly indoor and outdoor seating options welcome tourists and locals alike. We offer a wide range of local specialties alongside international favorites, ensuring there is something to love for everyone, including dedicated vegetarian and vegan dishes.';
+const subtext1: string = 'We offer a wide range of local specialties alongside international favorites, ensuring there is something to love for everyone, including dedicated vegetarian and vegan dishes.';
+const subtext2: string = 'Our casual, cozy, family-friendly indoor and outdoor seating options welcome tourists and locals alike.';
 </script>
 
 <template>
@@ -29,11 +30,11 @@ const subtext: string = 'Our casual, cozy, family-friendly indoor and outdoor se
     <template #second>
       <div class="flex flex-col gap-2 justify-center items-center text-center lg:text-left lg:items-start lg:pl-8 w-full">
         <Leadtext :text="leadtext" />
-        <Subtext :text="subtext" />
-        <div class="mt-10 flex justify-center">
-          <div class="w-32 h-1.5 bg-orange-500 rounded-full"></div>
+        <Subtext :text="subtext1" />
+        <Subtext :text="subtext2" />
+        <div class="mt-4! flex justify-center">
+          <div class="w-32 md:w-64 h-1.5 bg-orange-500 rounded-full"></div>
         </div>
-
       </div>
     </template>
 
