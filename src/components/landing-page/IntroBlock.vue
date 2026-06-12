@@ -20,7 +20,7 @@ const viewMenuText: string = 'View Menu';
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
         <Leadtext :text="leadText" class=""/>
         <Subtext :text="subtext" />
-        <div class="controls !mt-5 flex flex-col gap-4">
+        <div class="controls !mt-5 flex flex-col gap-4 items-center">
           <Link :to="'/catering'" :text="bookEventText" 
             class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
             dark:hover:text-white! dark:hover:bg-transparent" />
