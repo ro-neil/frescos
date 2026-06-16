@@ -20,7 +20,7 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 </script>
 
 <template>
-  <ContentBlock class="sm:px-12 px-8 py-12 md:gap-8 bg-primary-darker sm:flex-col!">
+  <ContentBlock class="sm:px-8 px-4 py-12 md:gap-8 bg-primary-darker sm:flex-col!">
     <template #A>
       <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 tracking-tight text-center">
         {{ title }}
@@ -28,7 +28,7 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 
     </template>
     <template #B>
-      <BookingForm @submit="handleSubmit" class="lg:min-w-3xl max-w-4xl px-6 py-8 sm:px-10 sm:py-14 bg-primary rounded-xl"/>
+      <BookingForm @submit="handleSubmit" class="w-full lg:min-w-3xl max-w-4xl px-6 py-8 sm:px-10 sm:py-14 bg-primary rounded-xl"/>
     </template>
   </ContentBlock>
 </template>

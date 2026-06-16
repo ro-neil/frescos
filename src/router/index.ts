@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import HomePageView from '@/views/HomePageView.vue'
 
@@ -34,7 +34,7 @@ export const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: routes,
 })
 
