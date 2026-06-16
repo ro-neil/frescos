@@ -1,1 +1,0 @@
-import{a as e,i as t,n,o as r,r as i,s as a}from"./index-C6wavrY_.js";var o=r({__name:`CateringView`,setup(r){return(r,o)=>(a(),t(`main`,null,[e(n),o[0]||=i(`h1`,null,`Catering page coming soon!`,-1)]))}});export{o as default};
