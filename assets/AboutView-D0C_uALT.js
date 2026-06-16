@@ -1,1 +1,0 @@
-import{a as e,f as t,h as n,m as r,p as i,u as a}from"./index-CyFSrPas.js";var o={class:`about`},s=r({__name:`AboutView`,setup(r){return(r,s)=>(n(),t(`div`,o,[i(e),s[0]||=a(`h1`,null,`About Fresco's`,-1)]))}});export{s as default};
