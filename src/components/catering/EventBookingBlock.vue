@@ -22,7 +22,7 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 <template>
   <ContentBlock class="sm:px-8 px-4 py-12 md:gap-8 bg-primary-darker sm:flex-col!">
     <template #A>
-      <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 tracking-tight text-center">
+      <h2 class="text-4xl md:text-5xl font-serif text-slate-900 tracking-tight text-center">
         {{ title }}
       </h2>
 
