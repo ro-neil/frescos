@@ -12,6 +12,7 @@
   --color-secondary: #1A2F3B;
   --color-accent-orange: #E28743;
   --color-accent-green: hsla(160, 100%, 37%, 1);
+  --color-primary-darker: #F1ECE4;
 }
 
 #app {
@@ -30,6 +31,10 @@ a {
 a:hover {
   text-decoration: underline wavy var(--color-accent-green);
   text-underline-offset: 3px;
+}
+
+.bg-primary-darker {
+  background-color: var(--color-primary-darker);
 }
 
 

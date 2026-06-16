@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Leadtext from '@/components/landing-page/Leadtext.vue';
+import Leadtext from '@/components/home/Leadtext.vue';
 import NavigationBar from '@/components/shared/NavigationBar.vue'
 </script>
 

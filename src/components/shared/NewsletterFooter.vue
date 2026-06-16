@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Subtext from '@/components/landing-page/Subtext.vue';
+import Subtext from '@/components/shared/Subtext.vue';
 
 // Define props for full extensibility
 interface Props {
@@ -55,12 +55,12 @@ const handleSubmit = () => {
           type="email" 
           required
           :placeholder="placeholder"
-          class="flex-1 px-4 text-base sm:text-lg text-semibold py-2 rounded-md border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-800 focus:border-transparent transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:ring-slate-300"
+          class="flex-1 px-4 text-base sm:text-lg text-semibold py-2 rounded-md border-2 border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-800 focus:border-transparent transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:ring-slate-300"
         />
         
         <button 
           type="submit"
-          class="px-4 py-2 rounded-full cursor bg-slate-700 text-white font-medium hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-all whitespace-nowrap dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white dark:focus:ring-slate-200 dark:focus:ring-offset-slate-950"
+          class="px-4 py-2 rounded-full cursor bg-slate-700 border-2 border-slate-700 text-white font-medium hover:bg-transparent hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-all whitespace-nowrap dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white dark:focus:ring-slate-200 dark:focus:ring-offset-slate-950"
         >
           <div class="flex justify-center gap-2">
             <span class="text-base sm:text-lg!">{{ buttonText }}</span>     

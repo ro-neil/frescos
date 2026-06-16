@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-import HomePageView from '@/components/landing-page/HomePageView.vue'
+import HomePageView from '@/views/HomePageView.vue'
 
 export const routes = [
   {
@@ -11,17 +11,17 @@ export const routes = [
   {
     path: '/menu',
     name: 'Menu',
-    component: () => import('../views/MenuView.vue'),
+    component: () => import('@/views/MenuView.vue'),
   },
   {
     path: '/catering',
     name: 'Catering',
-    component: () => import('../views/CateringView.vue'),
+    component: () => import('@/views/CateringView.vue'),
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/AboutView.vue'),
+    component: () => import('@/views/AboutView.vue'),
   },
   {
     path: '/contact',
@@ -29,7 +29,7 @@ export const routes = [
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/MenuView.vue'),
+    component: () => import('@/views/MenuView.vue'),
   },
 ]
 
