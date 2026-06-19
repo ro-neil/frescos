@@ -3,12 +3,15 @@ defineOptions({ inheritAttrs: false });
 defineProps({
     text: {
         type: String,
-        required: true
+        required: false
     }
 });
 </script>
 
 
 <template>
-	<p v-bind="$attrs" class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">{{ text }}</p>
+	<p v-if="text" v-bind="$attrs" class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">{{ text }}</p>
+    <p v-else class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">
+        <slot  ></slot>
+    </p> 
 </template>

@@ -28,7 +28,7 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 
     </template>
     <template #B>
-      <BookingForm @submit="handleSubmit" class="w-full lg:min-w-3xl max-w-4xl px-6 py-8 sm:px-10 sm:py-14 bg-primary rounded-xl"/>
+      <BookingForm @submit="handleSubmit" class="w-full lg:min-w-3xl max-w-4xl p-6 sm:px-10 sm:py-12 bg-primary rounded-xl"/>
     </template>
   </ContentBlock>
 </template>
