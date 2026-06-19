@@ -1,1 +1,0 @@
-import{_ as e,g as t,h as n,m as r,o as i,r as a}from"./index-tsK7Kdm0.js";var o=t({__name:`MenuView`,setup(t){return(t,o)=>(e(),r(`main`,null,[n(i),n(a,{text:`Food menu coming soon!`})]))}});export{o as default};

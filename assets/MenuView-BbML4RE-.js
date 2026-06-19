@@ -1,0 +1,1 @@
+import{_ as e,g as t,h as n,m as r,o as i,r as a}from"./index--Tn97tfi.js";var o=t({__name:`MenuView`,setup(t){return(t,o)=>(e(),r(`main`,null,[n(i),n(a,{text:`Food menu coming soon!`})]))}});export{o as default};
