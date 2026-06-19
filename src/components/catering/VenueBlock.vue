@@ -35,9 +35,9 @@ const imageC: Image = {
 
 <template>
   <div class="w-full shadow-sm shadow-gray-200 transform transition duration-500 hover:scale-[1.02]">
-    <div class="my-4! flex justify-center">
+    <!-- <div class="my-4! flex justify-center">
       <div class="w-32 md:w-64 h-1.5 bg-orange-400 rounded-full"></div>
-    </div>
+    </div> -->
     <img :src="imageA.path" :alt="imageA.alt" loading="eager" class="object-cover saturate-200 w-full max-h-150">
   </div>
 </template>

@@ -58,21 +58,21 @@ const submitForm = () => {
 </script>
 
 <template>
-	<form @submit.prevent="submitForm" class="grid grid-cols-1 md:grid-cols-6 gap-4 sm:gap-5">
+	<form @submit.prevent="submitForm" class="grid grid-cols-1 sm:grid-cols-6 gap-4 sm:gap-5 text-gray-600 dark:text-gray-600">
 
-		<div class="md:col-span-3">
+		<div class="sm:col-span-3">
 			<label for="fullName" class="font-semibold">Full Name</label>
 			<input id="fullName" v-model="formData.fullName" type="text" placeholder="" maxlength="50" required
 				class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-gray-500 focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 transition-colors" />
 		</div>
 
-		<div class="md:col-span-3">
+		<div class="sm:col-span-3">
 			<label for="email" class="font-semibold ">Email Address</label>
 			<input id="email" v-model="formData.email" type="email" placeholder="" required
 				class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-gray-500 focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 transition-colors" />
 		</div>
 
-		<div class="md:col-span-2">
+		<div class="sm:col-span-3 md:col-span-2">
 			<label for="eventDate" class="font-semibold ">Event Date</label>
 			<input 
 				id="eventDate" 
@@ -82,14 +82,14 @@ const submitForm = () => {
 				class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md shadow-sm text-gray-700 focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 transition-colors" />
 		</div>
 
-		<div class="md:col-span-2">
+		<div class="sm:col-span-3 md:col-span-2">
 			<label for="guestCount" class="font-semibold ">Estimated Guest Count</label>
 			<input id="guestCount" v-model="formData.guestCount" type="number" min="1"
 				placeholder="" max="500" required
 				class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-gray-500 focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 transition-colors" />
 		</div>
 
-		<div class="md:col-span-2 relative">
+		<div class="sm:col-span-6 md:col-span-2 relative">
 			<label for="eventType" class="font-semibold ">Event Type</label>
 			<select id="eventType" v-model="formData.eventType" required
 				class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md shadow-sm text-gray-700 appearance-none focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 transition-colors cursor-pointer">
@@ -106,7 +106,7 @@ const submitForm = () => {
 			</div>
 		</div>
 
-		<div class="md:col-span-6 mt-3!">
+		<div class="sm:col-span-6 mt-3!">
 			<button type="submit"
 				class="bg-orange-400 text-slate-100! border-orange-400 hover:!bg-transparent hover:border-orange-300 hover:text-orange-400! w-full rounded-full! py-2 px-6 border-2 focus:outline-none focus:ring-4 focus:ring-stone-300 font-medium rounded-md text-base sm:text-lg transition-colors duration-200 cursor-pointer">
 				{{ buttonText }}
