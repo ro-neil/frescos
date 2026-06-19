@@ -1,0 +1,1 @@
+import{_ as e,f as t,g as n,h as r,m as i,o as a}from"./index-tsK7Kdm0.js";var o={class:`about`},s=n({__name:`AboutView`,setup(n){return(n,s)=>(e(),i(`div`,o,[r(a),s[0]||=t(`h1`,null,`About Fresco's`,-1)]))}});export{s as default};
