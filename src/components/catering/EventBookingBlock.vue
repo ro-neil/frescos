@@ -1,14 +1,16 @@
 <script setup lang="ts">
 
+import { ref, onMounted, type Ref } from 'vue';
 import BookingForm from './BookingForm.vue';
 import type { EventFormData } from './BookingForm.vue';
 import ContentBlock from '@/components/shared/ContentBlock.vue';
 
 // Setup props for maximum extensibility
-const props = withDefaults(defineProps<{
-  title?: string;
-}>(), {
-  title: 'Tell Us About Your Event',
+const props = withDefaults(
+  defineProps<{
+    title?: string;
+  }>(), {
+    title: 'Tell Us About Your Event',
 });
 
 const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => {
@@ -20,7 +22,7 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 </script>
 
 <template>
-  <ContentBlock class="sm:px-8 px-4 py-12 md:gap-8 bg-primary-darker dark:bg-slate-800! sm:flex-col!">
+  <ContentBlock id="eventBookingSection" class="sm:px-8 px-4 py-12 md:gap-8 bg-primary-darker dark:bg-slate-800! sm:flex-col!">
     <template #A>
       <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 tracking-tight text-center">
         {{ title }}

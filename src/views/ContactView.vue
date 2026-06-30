@@ -5,6 +5,6 @@ import NavigationBar from '@/components/shared/NavigationBar.vue'
 <template>
   <main>
     <NavigationBar />
-    <h1>Reservation page coming soon!</h1>
+    <h1>Contact page coming soon!</h1>
   </main>
 </template>

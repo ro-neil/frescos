@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import ContentBlock from '@/components/shared/ContentBlock.vue';
-import Link from '@/components/utils/Link.vue';
-import tableAesthetics from '@/assets/images/catering/table-aesthetics.jpg';
 import outdoorDining from '@/assets/images/catering/outdoor-dining.jpg';
 import Leadtext from '@/components/shared/Leadtext.vue';
 import Subtext from '@/components/shared/Subtext.vue';
-import IconRightArrow from '@/components/icons/IconRightArrow.vue';
 
-
+const props = defineProps({
+    buttonAction: {
+        type: Function,
+        required: true
+    }
+})
 
 const leadText: string = 'Island Catering & Private Dining';
 const subtext: string = "We offer both comfortable indoor dining and scenic outdoor seating. Serving a diverse fusion of local specialties and international favorites.";
 const inquireNowText: string = 'Inquire Now';
+
 </script>
 
 <template>
@@ -20,11 +23,12 @@ const inquireNowText: string = 'Inquire Now';
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
         <Leadtext :text="leadText" class="" />
         <Subtext :text="subtext" />
-
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
-          <Link :to="'/catering'" :text="inquireNowText" 
-            class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
-            dark:hover:text-white! dark:hover:bg-transparent" />
+          <button @click="buttonAction()"
+            class="cursor-pointer border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
+            dark:hover:text-white! dark:hover:bg-transparent rounded-link flex items-center gap-1 border-2 px-4 py-2 rounded-full transition-colors 
+        duration-100 ease-in-out font-medium text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 text-base sm:text-lg!" > {{ inquireNowText }}
+          </button>
         </div>
       </div>
     </template>
