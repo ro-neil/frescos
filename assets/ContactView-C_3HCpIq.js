@@ -1,0 +1,1 @@
+import{_ as e,a as t,d as n,h as r,m as i,p as a}from"./index-DftZutGK.js";var o=r({__name:`ContactView`,setup(r){return(r,o)=>(e(),a(`main`,null,[i(t),o[0]||=n(`h1`,null,`Contact page coming soon!`,-1)]))}});export{o as default};

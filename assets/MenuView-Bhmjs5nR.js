@@ -1,0 +1,1 @@
+import{_ as e,a as t,h as n,m as r,p as i,r as a}from"./index-DftZutGK.js";var o=n({__name:`MenuView`,setup(n){return(n,o)=>(e(),i(`main`,null,[r(t),r(a,{text:`Food menu coming soon!`})]))}});export{o as default};
