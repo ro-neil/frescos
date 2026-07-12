@@ -1,1 +1,0 @@
-import{C as e,N as t,S as n,_ as r,a as i,b as a}from"./index-ddhPxXQx.js";var o=e({__name:`ContactView`,setup(e){return(e,o)=>(t(),a(`div`,null,[n(i),o[0]||=r(`h1`,null,`Contact page coming soon!`,-1)]))}});export{o as default};
