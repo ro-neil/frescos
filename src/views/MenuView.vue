@@ -32,9 +32,9 @@ onMounted(async () => {
       <NavigationBar />
       <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 w-full pt-10">
         <div class="px-4">
-          <div class="w-full sm:max-w-2xl lg:max-w-4xl rounded-md shadow-sm px-16 sm:px-18 py-8 flex flex-col items-center bg-emerald-50/25 dark:bg-gray-700 border border-emerald-100 dark:border-gray-600 mb-5!">
+          <div class="w-full sm:max-w-2xl lg:max-w-4xl rounded-md shadow-sm px-6 sm:px-18 lg:px-46 py-8 flex flex-col items-center bg-emerald-50/25 dark:bg-gray-700 border border-emerald-100 dark:border-gray-600 mb-5!">
             <IconDining width="72px" height="72px" class="text-[var(--fresco-text-color)]" />
-            <Leadtext :text="headerText" class="tracking-tight text-center" />
+            <Leadtext :text="headerText" class="tracking-tight text-center text-2xl md:text-5xl lg:text-7xl" />
           </div>
         </div>  
         <MenuTabs :tabs="menuData" class="py-10! px-4" />
