@@ -3,8 +3,8 @@ import NavigationBar from '@/components/shared/NavigationBar.vue'
 </script>
 
 <template>
-  <main>
+  <div>
     <NavigationBar />
     <h1>Contact page coming soon!</h1>
-  </main>
+  </div>
 </template>

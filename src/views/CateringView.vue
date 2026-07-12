@@ -15,7 +15,7 @@ const scrollToEventBooking = async () => {
 </script>
 
 <template>
-  <main class="bg-primary dark:bg-gray-900 dark:text-white">
+  <div class="bg-primary dark:bg-gray-900 dark:text-white">
     <div class="flex flex-col">
       <NavigationBar />
       <HeroBlock :buttonAction="scrollToEventBooking"/>
@@ -25,5 +25,5 @@ const scrollToEventBooking = async () => {
       </div>
       <NewsletterFooter />
     </div>
-  </main>
+  </div>
 </template>

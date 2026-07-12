@@ -18,7 +18,7 @@ const inquireNowText: string = 'Inquire Now';
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 pt-8! md:gap-8">
+  <ContentBlock class="pt-8! lg:pt-16! sm:px-6 px-4 md:gap-8">
     <template #A>
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
         <Leadtext :text="leadText" class="" />
