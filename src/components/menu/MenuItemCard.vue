@@ -70,7 +70,7 @@ const imageWrapperClasses = computed(() => {
     </div>
 
     <div class="flex-1 p-6 flex flex-col justify-between gap-4">
-      <div class="space-y-2">
+      <div class="space-y-3">
         <h3 class="text-xl font-bold text-[#111827] tracking-tight">
           {{ name }}
         </h3>

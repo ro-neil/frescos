@@ -19,8 +19,8 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-    <div class="rounded-2xl pt-5 pb-10 w-full max-w-4xl">
-        <div class="flex justify-between items-center p-1 w-full border-b-2 border-b border-orange-200 text-orange-500">
+    <div class="rounded-2xl pb-10 w-full max-w-4xl">
+        <div class="hidden flex justify-between items-center p-1 w-full border-b border-b border-orange-100 text-orange-500">
             <IconFlatware />
             <h2 class="text-2xl text-center font-bold tracking-wider uppercase">
                 {{ name }}
