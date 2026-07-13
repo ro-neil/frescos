@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useBrand } from '@/composables/useBrand'
-import { RouterLink } from 'vue-router'
+import { useBrand } from '@/composables/restaurant-brand';
+import { RouterLink } from 'vue-router';
 defineOptions({ inheritAttrs: false })
 const brand = useBrand();
 </script>

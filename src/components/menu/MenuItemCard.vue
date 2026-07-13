@@ -16,6 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
   reverse: false
 });
 
+
 // Format price consistently if passed as a raw number
 const formattedPrice = computed(() => {
   if (typeof props.price === 'number') {
@@ -53,18 +54,19 @@ const imageWrapperClasses = computed(() => {
 <template>
   <div 
     :class="[
-      'bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden flex transition-all duration-300 hover:shadow-md',
+      'shadow-md hover:shadow-lg border overflow-hidden flex transition-all duration-300',
       ...cardClasses
     ]"
   >
-    <div :class="['relative overflow-hidden bg-stone-100', imageWrapperClasses]">
+    <div :class="['relative overflow-hidden', imageWrapperClasses]">
       <img v-if="image"
         :src="image" 
         :alt="name" 
+        :title="name"
         class="w-full h-full object-cover transform transition duration-500 hover:scale-[1.03]"
         loading="lazy"
       />
-        <div v-else class="w-full h-full flex items-center justify-center bg-stone-200">
+        <div v-else class="w-full h-full flex items-center justify-center">
             <span class="text-stone-400 text-lg font-semibold">No Image</span>
         </div>
     </div>
@@ -79,10 +81,12 @@ const imageWrapperClasses = computed(() => {
         </p>
       </div>
 
-      <div class="flex justify-end items-end mt-auto">
-        <span class="text-xl font-extrabold text-orange-500">
-          {{ formattedPrice }}
-        </span>
+      <div class="menu-card-footer flex justify-end items-end mt-auto">
+        <div title="Meal Price" class="min-size-14 pl-3 pb-2 flex items-center justify-end border-b-3 border-emerald-500">
+          <span class="text-xl font-extrabold text-emerald-500">
+            {{ formattedPrice }}
+          </span>
+        </div>  
       </div>
     </div>
   </div>
