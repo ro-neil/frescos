@@ -54,7 +54,7 @@ const imageWrapperClasses = computed(() => {
 <template>
   <div 
     :class="[
-      'shadow-md hover:shadow-lg border overflow-hidden flex transition-all duration-300',
+      'shadow-md hover:shadow-lg hover:shadow-orange-50 hover:scale-[1.03] border overflow-hidden flex transition-all duration-300',
       ...cardClasses
     ]"
   >
@@ -82,8 +82,8 @@ const imageWrapperClasses = computed(() => {
       </div>
 
       <div class="menu-card-footer flex justify-end items-end mt-auto">
-        <div title="Meal Price" class="min-size-14 pl-3 pb-2 flex items-center justify-end border-b-3 border-emerald-500">
-          <span class="text-xl font-extrabold text-emerald-500">
+        <div title="Meal Price" class="min-size-14 pl-3 pb-2 flex items-center justify-end border-b-3 border-orange-500">
+          <span class="text-xl font-extrabold text-orange-500">
             {{ formattedPrice }}
           </span>
         </div>  

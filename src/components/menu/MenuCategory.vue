@@ -18,8 +18,8 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-    <div class="rounded-2xl pb-10 w-full max-w-4xl">
-        <div class="grid grid-cols-1 gap-5 max-w-4xl mx-auto mt-5!"
+    <div class="w-full">
+        <div class="grid grid-cols-1 gap-8 w-full"
             :class="{ 'md:grid-cols-2': orientation === 'vertical' }">
             <MenuItemCard v-for="(meal, index) in items" :key="index" :name="meal.name" :description="meal.description"
                 :price="meal.price" :image="meal.image" :orientation="orientation"
