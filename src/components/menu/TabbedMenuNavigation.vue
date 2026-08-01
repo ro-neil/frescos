@@ -45,7 +45,7 @@ const isActive = (id: string) : boolean => {
 </script>
 
 <template>
-  <div class="max-w-lg px-4">
+  <div class="max-w-lg">
     <div 
       role="tablist"
       aria-label="Menu Selection"
@@ -58,7 +58,7 @@ const isActive = (id: string) : boolean => {
         role="tab"
         :aria-selected="isActive(tab.id)"
         :aria-controls="`${tab.id}-panel`"
-        class="py-3 px-6 text-center transition-all duration-300 focus:outline-none group cursor-pointer rounded-full"
+        class="p-3 sm:px-6 text-center transition-all duration-300 focus:outline-none group cursor-pointer rounded-full"
         :class="{ 'bg-orange-500': isActive(tab.id) }"
       >
         <span 
