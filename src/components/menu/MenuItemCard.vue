@@ -54,7 +54,7 @@ const imageWrapperClasses = computed(() => {
 <template>
   <div 
     :class="[
-      'shadow-md hover:shadow-lg hover:shadow-orange-50 hover:scale-[1.03] border overflow-hidden flex transition-all duration-300',
+      'shadow-md hover:shadow-sm hover:shadow-orange-50 dark:shadow-sm dark:shadow-orange-50 hover:shadow-orange-500 hover:scale-[1.03] border overflow-hidden flex transition-all duration-300',
       ...cardClasses
     ]"
   >
@@ -73,10 +73,10 @@ const imageWrapperClasses = computed(() => {
 
     <div class="flex-1 p-6 flex flex-col justify-between gap-4">
       <div class="space-y-3">
-        <h3 class="text-xl font-bold text-[#111827] tracking-tight">
+        <h3 class="text-xl font-bold text-[#111827] dark:text-white tracking-tight">
           {{ name }}
         </h3>
-        <p class="text-sm text-stone-600 leading-relaxed font-normal">
+        <p class="text-sm text-stone-600 dark:text-slate-400 leading-relaxed font-normal">
           {{ description }}
         </p>
       </div>

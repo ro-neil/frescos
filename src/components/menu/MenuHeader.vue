@@ -11,7 +11,7 @@ const props = defineProps<Props>();
 
 
 <template>
-	<div class="flex flex-col gap-2 items-center justify-start">
+	<div class="flex flex-col gap-1 items-center justify-start">
 		<slot name="icon" />			
 		<Leadtext :text="headerText" class="tracking-tight text-center text-2xl md:text-5xl lg:text-7xl" />
 	</div>

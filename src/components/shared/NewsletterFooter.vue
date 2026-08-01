@@ -14,7 +14,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   title: "Connect With Us",
   subtitle: "Subscribe for seasonal event menu updates and island happenings.",
-  placeholder: "Enter your e-mail",
+  placeholder: "Enter your email",
   buttonText: "Subscribe Now",
   copyright: `©2026 Fresco's, George Town, Grand Cayman.`
 });
@@ -60,7 +60,7 @@ const handleSubmit = () => {
         
         <button 
           type="submit"
-          class="px-4 py-2 rounded-full cursor bg-slate-700 border-2 border-slate-700 text-white font-medium hover:bg-transparent hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-all whitespace-nowrap dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white dark:focus:ring-slate-200 dark:focus:ring-offset-slate-950"
+          class="px-4 py-2 rounded-full cursor-pointer bg-slate-700 border-2 border-slate-700 text-white font-medium hover:bg-transparent hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-all whitespace-nowrap dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white dark:focus:ring-slate-200 dark:focus:ring-offset-slate-950"
         >
           <div class="flex justify-center gap-2">
             <span class="text-base sm:text-lg!">{{ buttonText }}</span>     
@@ -70,7 +70,7 @@ const handleSubmit = () => {
       </form>
 
       <div class="border-t border-slate-200 dark:border-slate-800 pt-3 mt-4! text-center">
-        <p class="text-xs text-sm text-slate-500 dark:text-slate-400 font-medium">
+        <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
           {{ copyright }}
         </p>
       </div>

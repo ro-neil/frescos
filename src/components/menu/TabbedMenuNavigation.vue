@@ -38,50 +38,37 @@ const selectTab = (id: string) => {
   activeTab.value = id;
   emit('update:modelValue', id);
 };
+
+const isActive = (id: string) : boolean => {
+  return activeTab.value === id;
+}
 </script>
 
 <template>
-  <div class="w-full max-w-lg px-4">
-    <!-- 
-      Outer Container: Rounded pill with subtle drop shadows and border
-    -->
+  <div class="max-w-lg px-4">
     <div 
       role="tablist"
       aria-label="Menu Selection"
-      class="relative bg-[#F5F3E9] dark:bg-slate-900 p-1.5 rounded-full flex items-center w-full shadow-inner border border-stone-200/50 dark:border-slate-800 transition-colors duration-300"
+      class="bg-[#F5F3E9] dark:bg-slate-900 p-1.5 rounded-full flex justify-between gap-1 sm:gap-2 w-full shadow-inner border border-stone-200/50 dark:border-slate-800 transition-colors duration-300"
     >
-      
-      <!-- 
-        Dynamic Sliding Background Indicator:
-        Uses a computed index mapping with inline CSS Translate X 
-        for mathematical perfect alignment across any number of tabs.
-      -->
-      <div 
-        class="absolute top-1.5 bottom-1.5 left-1.5 rounded-full bg-gradient-to-r from-orange-500 to-amber-600 dark:from-orange-600 dark:to-amber-700 transition-all duration-300 ease-out shadow-md shadow-orange-500/20"
-        :style="{ 
-          width: `calc((100% - 12px) / ${tabs.length})`,
-          transform: `translateX(calc(${activeIndex} * 100%))`
-        }"
-      />
-      
-      <!-- Tab Buttons -->
       <button 
         v-for="(tab, index) in tabs" 
         :key="tab.id"
         @click="selectTab(tab.id)"
         role="tab"
-        :aria-selected="activeTab === tab.id"
+        :aria-selected="isActive(tab.id)"
         :aria-controls="`${tab.id}-panel`"
-        class="relative flex-1 py-3 text-center transition-all duration-300 focus:outline-none group cursor-pointer"
+        class="py-3 px-6 text-center transition-all duration-300 focus:outline-none group cursor-pointer rounded-full"
+        :class="{ 'bg-orange-500': isActive(tab.id) }"
       >
         <span 
-          class="relative z-10 flex items-center justify-center gap-2 text-sm font-bold tracking-wider uppercase transition-colors duration-300"
-          :class="activeTab === tab.id ? 'text-white' : 'text-stone-500 hover:text-stone-800 dark:text-slate-400 dark:hover:text-slate-200'"
+          class="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold tracking-wider uppercase transition-colors duration-300"
+          :class="isActive(tab.id) ? 'text-white' : 'text-stone-500 hover:text-stone-800 dark:text-slate-400 dark:hover:text-slate-200'"
         >
           <!-- Breakfast Icon (Sunrise) -->
           <svg 
             v-if="tab.iconName === 'sunrise'" 
-            class="w-4.5 h-4.5 transition-transform duration-300 group-hover:scale-110" 
+            class="w-4 h-4 sm:w-4.5 sm:h-4.5 transition-transform duration-300 group-hover:scale-110" 
             fill="none" 
             stroke="currentColor" 
             stroke-width="2.5" 
@@ -93,7 +80,7 @@ const selectTab = (id: string) => {
           <!-- Lunch Icon (Sun) -->
           <svg 
             v-if="tab.iconName === 'sun'" 
-            class="w-4.5 h-4.5 transition-transform duration-300 group-hover:scale-110" 
+            class="w-4 h-4 sm:w-4.5 sm:h-4.5 transition-transform duration-300 group-hover:scale-110" 
             fill="none" 
             stroke="currentColor" 
             stroke-width="2.5" 
@@ -105,7 +92,7 @@ const selectTab = (id: string) => {
           <!-- Dinner Icon (Moon) -->
           <svg 
             v-if="tab.iconName === 'moon'" 
-            class="w-4.5 h-4.5 transition-transform duration-300 group-hover:rotate-12" 
+            class="w-4 h-4 sm:w-4.5 sm:h-4.5 transition-transform duration-300 group-hover:rotate-12" 
             fill="none" 
             stroke="currentColor" 
             stroke-width="2.5" 
@@ -114,7 +101,7 @@ const selectTab = (id: string) => {
             <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
           </svg>
 
-          <span class="hidden sm:inline">{{ tab.label }}</span>
+          <span class="sm:inline">{{ tab.label }}</span>
         </span>
       </button>
       

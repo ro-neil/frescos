@@ -24,16 +24,16 @@ onMounted(() => {
   <div class="bg-primary dark:bg-gray-900 dark:text-white">
     <div class="flex flex-col justify-center">
       <NavigationBar />
-      <div class="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 w-full pt-10 gap-12">
+      <div class="flex flex-col items-center justify-center bg-gray-100 dark:bg-transparent w-full py-10 gap-12">
         <MenuHeader :headerText="menuHeaderText"
-          class="w-full sm:max-w-2xl lg:max-w-4xl flex flex-col items-center bg-emerald-50/25 dark:bg-gray-700 text-[var(--fresco-text-color)]">
+          class="w-full sm:max-w-2xl lg:max-w-4xl flex flex-col items-center bg-emerald-50/25 dark:bg-transparent text-[var(--fresco-text-color)]">
           <template #icon>
             <IconDining width="72px" height="72px" />
           </template>
         </MenuHeader>
-        <TabbedMenu :footerText="menuFooterText" :defaultTab="mealTime.LUNCH"/>
-        <NewsletterFooter class="bg-primary" />
+        <TabbedMenu :footerText="menuFooterText" :defaultTab="mealTime.LUNCH"/>  
       </div>
+      <NewsletterFooter class="dark:bg-gray-800"/>
     </div>
   </div>
 </template>
