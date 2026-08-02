@@ -37,4 +37,9 @@ a:hover {
   background-color: var(--color-primary-darker);
 }
 
+.text-fresco {
+  color: var(--fresco-text-color);
+  transition: color 0.5s;
+}
+
 
