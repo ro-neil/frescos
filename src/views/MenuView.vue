@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import NavigationBar from '@/components/shared/NavigationBar.vue';
+import SiteNavigation from '@/components/shared/SiteNavigation.vue';
 import IconDining from '@/components/icons/IconDining.vue';
 import NewsletterFooter from '@/components/shared/NewsletterFooter.vue';
 import TabbedMenu from '@/components/menu/TabbedMenu.vue';
@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
   <div class="bg-primary dark:bg-gray-900 dark:text-white">
     <div class="flex flex-col justify-center">
-      <NavigationBar />
+      <SiteNavigation />
       <div class="flex flex-col items-center justify-center bg-gray-100 dark:bg-transparent w-full py-10 gap-12">
         <MenuHeader :headerText="menuHeaderText"
           class="w-full sm:max-w-2xl lg:max-w-4xl flex flex-col items-center bg-emerald-50/25 dark:bg-transparent text-[var(--fresco-text-color)]">

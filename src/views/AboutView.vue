@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import NavigationBar from '@/components/shared/NavigationBar.vue'
+import SiteNavigation from '@/components/shared/SiteNavigation.vue'
 </script>
 
 <template>
   <div class="about">
-    <NavigationBar />
-    <h1>About Fresco's</h1>
+    <SiteNavigation />
+    <h1 class="text-center">About Fresco's</h1>
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import NavigationBar from '@/components/shared/NavigationBar.vue'
+import SiteNavigation from '@/components/shared/SiteNavigation.vue'
 </script>
 
 <template>
   <div>
-    <NavigationBar />
-    <h1>Contact page coming soon!</h1>
+    <SiteNavigation />
+    <h1 class="text-center">Contact page coming soon!</h1>
   </div>
 </template>
