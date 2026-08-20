@@ -1,0 +1,1 @@
+var e=`/frescos/assets/outdoor-dining-BkwC8OeM.jpg`;export{e as t};

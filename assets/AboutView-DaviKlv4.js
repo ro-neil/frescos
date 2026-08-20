@@ -1,0 +1,1 @@
+import{T as e,a as t,b as n,g as r,p as i,x as a}from"./index-BeEedtvM.js";var o={class:`about`},s=a({__name:`AboutView`,setup(a){return(a,s)=>(e(),r(`div`,o,[n(t),s[0]||=i(`h1`,{class:`text-center`},`About Fresco's`,-1)]))}});export{s as default};
