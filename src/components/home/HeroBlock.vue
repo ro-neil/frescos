@@ -3,7 +3,6 @@ import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import eggDishPhoto from '@/assets/images/home/egg-dish.jpg';
 import Leadtext from '@/components/shared/Leadtext.vue';
-import Subtext from '@/components/shared/Subtext.vue';
 import IconRightArrow from '@/components/icons/IconRightArrow.vue';
 
 const leadText: string = 'Island Flavor Meets Casual Elegance';
@@ -19,7 +18,7 @@ const viewMenuText: string = 'View Menu';
     <template #A>
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
         <Leadtext :text="leadText" class=""/>
-        <Subtext :text="subtext" />
+        <p class="text-description">{{ subtext }}</p>
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
           <Link :to="'/booking'" :text="bookEventText" 
             class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
