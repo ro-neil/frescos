@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
         <!-- Mobile overlay -->
         <Transition name="nav-overlay">
             <div v-if="mobileMenuOpen"
-                class="fixed left-0 top-13 bottom-0 z-50 w-full border-t border-gray-200 dark:border-gray-800 bg-primary dark:bg-gray-900 shadow-lg sm:hidden overflow-y-auto">
+                class="fixed left-0 top-13 bottom-0 overflow-y-auto z-50 w-full border-t border-gray-200 dark:border-gray-800 bg-primary dark:bg-gray-900 shadow-lg sm:hidden overflow-y-auto">
                 <TransitionGroup name="nav-item" tag="ul" class="flex flex-col gap-0 p-4">
                     <li v-for="(route, index) in filteredRoutes" :key="route.name" class=""
                         :style="{ '--index': index, '--total': filteredRoutes.length }"
