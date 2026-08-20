@@ -2,7 +2,6 @@
 import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import Leadtext from '@/components/shared/Leadtext.vue';
-import Subtext from '@/components/shared/Subtext.vue';
 import IconNorthEastArrow from '@/components/icons/IconNorthEastArrow.vue';
 import { routeMap } from '@/router/index.ts'
 
@@ -33,10 +32,10 @@ const shortLinks = [
   <ContentBlock class="sm:px-6 px-4 md:gap-8 bg-slate-700 !text-white">
     <template #A>
       <div class="flex flex-col gap-4 justify-center items-center text-center sm:text-left sm:items-start w-full">
-        <Subtext :text="subtext1" class="font-bold! text-base! sm:text-lg! uppercase" />
+        <p class="text-description font-bold! text-base! sm:text-lg! uppercase">{{ subtext1 }}</p>
         <Leadtext :text="leadText" class="" />
-        <Subtext :text="subtext2" />
-        <Subtext :text="subtext3" class="!mb-3 tracking-wide decoration-orange-400 underline decoration-wavy underline-offset-4" />
+        <p class="text-description">{{ subtext2 }}</p>
+        <p class="text-description !mb-3 tracking-wide decoration-orange-400 underline decoration-wavy underline-offset-4">{{ subtext3 }}</p>
         <Link :to="cateringRoute" :text="exploreCateringText"
           class="hover:!no-underline text-white border-white hover:!bg-white hover:!text-slate-800 md:hidden" />
       </div>
