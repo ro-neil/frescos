@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Subtext from '@/components/shared/Subtext.vue';
 
 
 // Define props for full extensibility
@@ -43,7 +42,7 @@ const handleSubmit = () => {
       <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 mb-3 tracking-tight">
         {{ title }}
       </h2>
-      <Subtext :text="subtitle" class="text-slate-700 dark:text-slate-300" />
+      <p class="text-description text-slate-700 dark:text-slate-300">{{ subtitle }}</p>
 
       <form 
         @submit.prevent="handleSubmit" 

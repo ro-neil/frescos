@@ -10,8 +10,8 @@ defineProps({
 
 
 <template>
-	<p v-if="text" v-bind="$attrs" class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">{{ text }}</p>
-    <p v-else class="text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium">
+	<p v-if="text" v-bind="$attrs" class="text-description">{{ text }}</p>
+    <p v-else class="text-description">
         <slot  ></slot>
     </p> 
 </template>
