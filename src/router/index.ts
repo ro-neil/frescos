@@ -14,9 +14,9 @@ export const routes = [
     component: () => import('@/views/MenuView.vue'),
   },
   {
-    path: '/catering',
-    name: 'Catering',
-    component: () => import('@/views/CateringView.vue'),
+    path: '/booking',
+    name: 'Booking',
+    component: () => import('@/views/BookingView.vue'),
   },
   {
     path: '/about',

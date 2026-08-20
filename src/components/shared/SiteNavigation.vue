@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watchEffect, onMounted, onBeforeUnmount } from 'vue'
 import { RouterLink } from 'vue-router'
-import { routes } from '@/router/index.ts'
+import { routes } from '@/router/index'
 import Brand from '@/components/utils/Brand.vue'
 import IconNorthEastArrow from '@/components/icons/IconNorthEastArrow.vue'
 
@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
         <!-- Mobile overlay -->
         <Transition name="nav-overlay">
             <div v-if="mobileMenuOpen"
-                class="fixed left-0 top-13 z-50 h-[calc(100vh-3.25rem)] w-full border-t border-gray-200 dark:border-gray-800 bg-primary dark:bg-gray-900 shadow-lg sm:hidden overflow-y-auto">
+                class="fixed left-0 top-13 bottom-0 z-50 w-full border-t border-gray-200 dark:border-gray-800 bg-primary dark:bg-gray-900 shadow-lg sm:hidden overflow-y-auto">
                 <TransitionGroup name="nav-item" tag="ul" class="flex flex-col gap-0 p-4">
                     <li v-for="(route, index) in filteredRoutes" :key="route.name" class=""
                         :style="{ '--index': index, '--total': filteredRoutes.length }"

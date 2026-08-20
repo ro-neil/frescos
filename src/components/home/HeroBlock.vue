@@ -21,7 +21,7 @@ const viewMenuText: string = 'View Menu';
         <Leadtext :text="leadText" class=""/>
         <Subtext :text="subtext" />
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
-          <Link :to="'/catering'" :text="bookEventText" 
+          <Link :to="'/booking'" :text="bookEventText" 
             class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
             dark:hover:text-white! dark:hover:bg-transparent" />
           <Link to="/menu" :text="viewMenuText" :iconEnd="true" 

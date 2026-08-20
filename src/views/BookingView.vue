@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref, nextTick, type Ref } from 'vue';
 import SiteNavigation from '@/components/shared/SiteNavigation.vue';
-import HeroBlock from '@/components/catering/HeroBlock.vue';
-import VenueBlock from '@/components/catering/VenueBlock.vue';
-import EventBookingBlock from '@/components/catering/EventBookingBlock.vue';
+import HeroBlock from '@/components/booking/HeroBlock.vue';
+import VenueBlock from '@/components/booking/VenueBlock.vue';
+import EventBookingBlock from '@/components/booking/EventBookingBlock.vue';
 import NewsletterFooter from '@/components/shared/NewsletterFooter.vue';
 
 const eventBookingSection = ref();
