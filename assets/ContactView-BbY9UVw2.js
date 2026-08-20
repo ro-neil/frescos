@@ -1,1 +1,0 @@
-import{a as e,b as t,g as n,p as r,w as i,x as a}from"./index-CptiWN1j.js";var o=a({__name:`ContactView`,setup(a){return(a,o)=>(i(),n(`div`,null,[t(e),o[0]||=r(`h1`,{class:`text-center`},`Contact page coming soon!`,-1)]))}});export{o as default};

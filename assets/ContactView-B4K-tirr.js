@@ -1,0 +1,1 @@
+import{a as e,b as t,g as n,p as r,t as i,w as a,x as o}from"./index-BSFvJBrw.js";var s=o({__name:`ContactView`,setup(o){return(o,s)=>(a(),n(`div`,null,[t(e),s[0]||=r(`h1`,{class:`text-center my-5`},`Contact page coming soon!`,-1),t(i)]))}});export{s as default};
