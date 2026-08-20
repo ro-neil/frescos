@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Subtext from '@/components/shared/Subtext.vue';
 
+
 // Define props for full extensibility
 interface Props {
   title?: string;
