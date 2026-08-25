@@ -3,7 +3,7 @@ import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import veganSalad from '@/assets/images/home/vegan-salad.jpg';
 import Leadtext from '@/components/shared/Leadtext.vue';
-import Subtext from '@/components/shared/Subtext.vue';
+
 
 const leadText: string = '@2026 Copyright';
 const subtext: string = 'A local George Town favorite, serving up delicious meals in a relaxed and welcoming atmosphere for over 20\
@@ -16,7 +16,7 @@ const subtext: string = 'A local George Town favorite, serving up delicious meal
     <template #A>
       <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
         <Leadtext :text="leadText" class=""/>
-        <Subtext :text="subtext" />
+        <p class="text-description">{{ subtext }}</p>
       </div>
     </template>
     <template #B>

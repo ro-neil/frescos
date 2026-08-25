@@ -4,7 +4,12 @@ import Link from '@/components/utils/Link.vue';
 import eggDishPhoto from '@/assets/images/home/egg-dish.jpg';
 import Leadtext from '@/components/shared/Leadtext.vue';
 import IconRightArrow from '@/components/icons/IconRightArrow.vue';
+import { routeMap } from '@/router/index.ts'
 
+const routes: Record<string, string> = {
+  booking: routeMap.booking || '',
+  menu: routeMap.menu || '',
+};
 const leadText: string = 'Island Flavor Meets Casual Elegance';
 const subtext: string = 'A local George Town favorite, serving up delicious meals in a relaxed and welcoming atmosphere for over 20\
       years. Our menu features a fusion of caribbean and international flavors, crafted with fresh, locally sourced\
@@ -20,11 +25,11 @@ const viewMenuText: string = 'View Menu';
         <Leadtext :text="leadText" class=""/>
         <p class="text-description">{{ subtext }}</p>
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
-          <Link :to="'/booking'" :text="bookEventText" 
+          <Link :to="routes.booking || ''" :text="bookEventText" 
             class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
-            dark:hover:text-white! dark:hover:bg-transparent" />
-          <Link to="/menu" :text="viewMenuText" :iconEnd="true" 
-          class="border-none text-emerald-500! dark:text-emerald-400! py-0! sm:px-0! hover:text-emerald-600! dark:hover:text-emerald-500!" >
+            dark:hover:text-white! dark:hover:bg-transparent" 
+          />
+          <Link :to="routes.menu || ''" :text="viewMenuText" :iconEnd="true" class="border-none text-emerald-500! dark:text-emerald-400! py-0! sm:px-0! hover:text-emerald-600! dark:hover:text-emerald-500!" >
             <template #icon>
               <IconRightArrow />
             </template>

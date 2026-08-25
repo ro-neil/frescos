@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface LocationHoursProps {
-  title?: string
-  subtitle?: string
+  heading?: string
+  subheading?: string
   address?: string
   hours?: string
   serviceHours?: string
@@ -9,11 +9,11 @@ interface LocationHoursProps {
 }
 
 withDefaults(defineProps<LocationHoursProps>(), {
-  title: 'Location & Hours',
-  subtitle: 'Our island oasis on Grand Cayman.',
-  address: 'George Town, Grand Cayman',
-  hours: 'Open Daily | 7:00 AM – 8:00 PM',
-  serviceHours: '(Breakfast served 7:30 AM – 11:00 AM)',
+  heading: 'Heading',
+  subheading: 'Subheading',
+  address: 'Restaurant Address',
+  hours: 'Opening Hours',
+  serviceHours: 'Service Hours',
 })
 </script>
 
@@ -23,13 +23,13 @@ withDefaults(defineProps<LocationHoursProps>(), {
       <!-- Heading -->
       <header class="mb-4 sm:mb-6 lg:mb-8">
         <h2
-          class="font-serif text-xl leading-tight text-gray-900 sm:text-2xl"
+          class="page-heading !mb-0"
         >
-          {{ title }}
+          {{ heading }}
         </h2>
 
-        <p class="mt-0.5 text-[10px] leading-tight text-gray-800 sm:text-xs">
-          {{ subtitle }}
+        <p class="text-description !text-sm">
+          {{ subheading }}
         </p>
       </header>
 
@@ -37,7 +37,7 @@ withDefaults(defineProps<LocationHoursProps>(), {
       <div class="flex items-between gap-5 sm:gap-8"
       >
         <!-- Image -->
-        <div class="shrink-0 sm:w-1/2">
+        <div class="sm:w-1/2">
           <div
             class="mx-auto aspect-square w-36 overflow-hidden rounded-full border-[7px] border-[#d98a4c] sm:w-48 md:w-56"
           >

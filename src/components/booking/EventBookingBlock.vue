@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import { ref, onMounted, type Ref } from 'vue';
 import BookingForm from './BookingForm.vue';
 import type { EventFormData } from './BookingForm.vue';
 import ContentBlock from '@/components/shared/ContentBlock.vue';

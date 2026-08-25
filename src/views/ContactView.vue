@@ -7,12 +7,13 @@ import MapConnection from '@/components/contact/MapConnection.vue';
 import outdoorDining from '@/assets/images/catering/outdoor-dining.jpg';
 
 const location = {
+  heading: 'Location & Hours',
+  subheading: 'The island oasis on Grand Cayman.',
   image: outdoorDining,
   map: outdoorDining,
-
   address: 'George Town, Grand Cayman',
-  hours: 'Open Daily | 7:00 AM – 8:00 PM',
-  serviceHours: '(Breakfast served 7:30 AM – 11:00 AM)',
+  hours: 'Open Daily | 7:00 AM - 8:00 PM',
+  serviceHours: '(Breakfast is served 7:30 AM - 11:00 AM)',
 }
 </script>
 
@@ -20,8 +21,14 @@ const location = {
   <div>
     <SiteNavigation />
     <div class="w-full overflow-hidden">
-      <LocationHours :image-src="location.image" :address="location.address" :hours="location.hours"
-        :service-hours="location.serviceHours" />
+      <LocationHours
+        :heading="location.heading"
+        :subheading="location.subheading"
+        :image-src="location.image" 
+        :address="location.address" 
+        :hours="location.hours"
+        :service-hours="location.serviceHours" 
+      />
 
       <Amenities />
 

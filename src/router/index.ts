@@ -49,6 +49,7 @@ function getRouteMap(routes: RouteRecordRaw[]): Record<string, string> {
   }, {} as Record<string, string>)
 }
 
+
 export const routeMap: Record<string, string> = getRouteMap(routes)
 
 export default router

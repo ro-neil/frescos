@@ -4,7 +4,6 @@ import salmonDishPhoto from '@/assets/images/home/salmon-dish-1.jpg';
 import salmonDishPhoto2 from '@/assets/images/home/salmon-dish-2.jpg';
 import salmonDishPhoto3 from '@/assets/images/home/salmon-dish-3.jpg';
 import Leadtext from '@/components/shared/Leadtext.vue';
-import Subtext from '@/components/shared/Subtext.vue';
 
 const leadtext: string = 'Experience Real Taste';
 const subtext1: string = 'We offer a wide range of local specialties alongside international favorites, ensuring there is something to love for everyone, including dedicated vegetarian and vegan dishes.';
@@ -30,8 +29,8 @@ const subtext2: string = 'Our casual, cozy, family-friendly indoor and outdoor s
     <template #B>
       <div class="flex flex-col gap-2 justify-center items-center text-center lg:text-left lg:items-start lg:pl-8 w-full">
         <Leadtext :text="leadtext" />
-        <Subtext :text="subtext1" />
-        <Subtext :text="subtext2" />
+        <p class="text-description">{{ subtext1 }}</p>
+        <p class="text-description">{{ subtext2 }}</p>
         <div class="mt-4! flex justify-center">
           <div class="w-32 md:w-64 h-1.5 bg-orange-500 rounded-full"></div>
         </div>
