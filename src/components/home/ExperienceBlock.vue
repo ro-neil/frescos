@@ -15,13 +15,13 @@ const subtext2: string = 'Our casual, cozy, family-friendly indoor and outdoor s
     <template #A>
       <div class="w-full grid grid-cols-2 gap-4 sm:gap-6">
         <div
-          class="col-span-1 aspect-square overflow-hidden rounded-full shadow-lg shadow-orange-400 transform transition duration-500 hover:scale-[1.02]">
-          <img :src="salmonDishPhoto3" alt="Fresh Salmon Dish" class="w-full h-full object-cover" />
+          class="col-span-1 aspect-square overflow-hidden rounded-full shadow-lg shadow-orange-400 hover-scale-2">
+          <img :src="salmonDishPhoto3" alt="Fresh Salmon Dish" class="circular-image size-full" />
         </div>
 
         <div
-          class="col-span-1  aspect-square overflow-hidden rounded-full shadow-lg shadow-orange-400 transform transition duration-500 hover:scale-[1.02] mt-8 sm:mt-12">
-          <img :src="salmonDishPhoto2" alt="Creamy Salmon Dish" class="w-full h-full object-cover" />
+          class="col-span-1 aspect-square overflow-hidden rounded-full shadow-lg shadow-orange-400 hover-scale-2 mt-8 sm:mt-12">
+          <img :src="salmonDishPhoto2" alt="Creamy Salmon Dish" class="circular-image size-full" />
         </div>
       </div>
     </template>

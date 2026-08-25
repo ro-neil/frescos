@@ -39,9 +39,9 @@ const viewMenuText: string = 'View Menu';
     </template>
     <template #B>
       <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full">
-        <div class="rounded-full shadow-lg shadow-orange-400 transform transition duration-500 hover:scale-[1.02]">
+        <div class="rounded-full hover-scale-2 shadow-lg shadow-orange-400">
           <img :src="eggDishPhoto" alt="A photo of a delicious meal prepared with boiled eggs and fresh ingredients" loading="eager"
-            class="rounded-full size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem] object-cover saturate-200">
+            class="circular-image size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem]">
         </div>
       </div>
     </template>

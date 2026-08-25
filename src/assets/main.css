@@ -31,6 +31,14 @@
   @apply text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium;
 }
 
+.circular-image {
+ @apply rounded-full object-cover saturate-200;
+}
+
+.hover-scale-2 {
+  @apply transform transition duration-500 hover:scale-[1.02];
+}
+
 a {
   text-decoration: none;
   transition: 0.4s;
