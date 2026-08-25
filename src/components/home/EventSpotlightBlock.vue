@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import IconNorthEastArrow from '@/components/icons/IconNorthEastArrow.vue';
 import { routeMap } from '@/router/index.ts'
@@ -28,8 +27,7 @@ const shortLinks = [
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 md:gap-8 bg-slate-700 !text-white">
-    <template #A>
+  <section class="section-container sm:flex-row! bg-slate-700 !text-white">
       <div class="flex flex-col gap-4 justify-center items-center text-center sm:text-left sm:items-start w-full">
         <p class="text-description font-bold! text-base! sm:text-lg! uppercase">{{ subtext1 }}</p>
         <h2 class="page-heading text-light">{{ pageHeading }}</h2>
@@ -38,8 +36,7 @@ const shortLinks = [
         <Link :to="bookingRoute" :text="exploreCateringText"
           class="hover:!no-underline text-white border-white hover:!bg-white hover:!text-slate-800 md:hidden" />
       </div>
-    </template>
-    <template #B>
+
       <div class="hidden w-[60%] md:flex md:flex-col md:justify-between md:gap-6 md:!p-4">
         <Link v-for="link in shortLinks" 
           :to="link.to" :icon-end="true"
@@ -57,6 +54,5 @@ const shortLinks = [
         <Link :to="bookingRoute" :text="exploreCateringText"
           class="hover:!no-underline bg-white text-gray-900! border-white hover:!bg-transparent hover:!text-white text-nowrap" />
       </div>
-    </template>
-  </ContentBlock>
+    </section>
 </template>

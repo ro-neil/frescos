@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import ContentBlock from '@/components/shared/ContentBlock.vue';
 import outdoorDining from '@/assets/images/catering/outdoor-dining.jpg';
-import Leadtext from '@/components/shared/Leadtext.vue';
 
 const props = defineProps({
     buttonAction: {
@@ -10,17 +8,16 @@ const props = defineProps({
     }
 })
 
-const leadText: string = 'Island Catering & Private Dining';
+const pageHeading: string = 'Island Catering & Private Dining';
 const subtext: string = "We offer both comfortable indoor dining and scenic outdoor seating. Serving a diverse fusion of local specialties and international favorites.";
 const inquireNowText: string = 'Inquire Now';
 
 </script>
 
 <template>
-  <ContentBlock class="pt-8! lg:pt-16! sm:px-6 px-4 md:gap-8">
-    <template #A>
+  <section class="section-container sm:flex-row!">
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
-        <Leadtext :text="leadText" class="" />
+        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
         <p class='text-description'>{{ subtext }}</p>
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
           <button @click="buttonAction()"
@@ -30,8 +27,7 @@ const inquireNowText: string = 'Inquire Now';
           </button>
         </div>
       </div>
-    </template>
-    <template #B>
+
       <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full">
         <div class="rounded-full shadow-lg shadow-orange-400 transform transition duration-500 hover:scale-[1.02]">
           <img :src="outdoorDining" alt="A photo of a delicious meal prepared with boiled eggs and fresh ingredients"
@@ -39,6 +35,6 @@ const inquireNowText: string = 'Inquire Now';
             class="rounded-full size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem] object-cover saturate-200">
         </div>
       </div>
-    </template>
-  </ContentBlock>
+
+    </section>
 </template>

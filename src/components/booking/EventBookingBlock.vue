@@ -2,7 +2,6 @@
 
 import BookingForm from './BookingForm.vue';
 import type { EventFormData } from './BookingForm.vue';
-import ContentBlock from '@/components/shared/ContentBlock.vue';
 
 // Setup props for maximum extensibility
 const props = withDefaults(
@@ -21,15 +20,10 @@ const handleSubmit = (formData: { data: EventFormData, formReset: Function}) => 
 </script>
 
 <template>
-  <ContentBlock id="eventBookingSection" class="sm:px-8 px-4 py-12 md:gap-8 bg-primary-darker dark:bg-slate-800! sm:flex-col!">
-    <template #A>
-      <h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 tracking-tight text-center">
+  <section class="section-container bg-primary-darker dark:bg-slate-800!">
+      <h2 class="page-heading text-dark text-center">
         {{ title }}
       </h2>
-
-    </template>
-    <template #B>
       <BookingForm @submit="handleSubmit" class="w-full lg:min-w-3xl max-w-4xl p-6 sm:px-10 sm:py-12 bg-primary dark:bg-slate-700 rounded-xl"/>
-    </template>
-  </ContentBlock>
+  </section>
 </template>

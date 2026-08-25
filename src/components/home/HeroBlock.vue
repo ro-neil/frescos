@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import eggDishPhoto from '@/assets/images/home/egg-dish.jpg';
 import IconRightArrow from '@/components/icons/IconRightArrow.vue';
@@ -18,31 +17,26 @@ const viewMenuText: string = 'View Menu';
 </script>
 
 <template>
-  <ContentBlock class="pt-8! lg:pt-16! sm:px-6 px-4 md:gap-8">
-    <template #A>
-      <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
-        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
-        <p class="text-description">{{ subtext }}</p>
-        <div class="controls !mt-5 flex flex-col gap-4 items-center">
-          <Link :to="routes.booking || ''" :text="bookEventText" 
-            class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
-            dark:hover:text-white! dark:hover:bg-transparent" 
-          />
-          <Link :to="routes.menu || ''" :text="viewMenuText" :iconEnd="true" class="border-none text-emerald-500! dark:text-emerald-400! py-0! sm:px-0! hover:text-emerald-600! dark:hover:text-emerald-500!" >
-            <template #icon>
-              <IconRightArrow />
-            </template>
-          </Link>
-        </div>
+  <section class="section-container sm:flex-row!">
+    <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
+      <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
+      <p class="text-description">{{ subtext }}</p>
+      <div class="controls !mt-5 flex flex-col gap-4 items-center">
+        <Link :to="routes.booking || ''" :text="bookEventText" class="border-orange-400 bg-orange-400 text-primary hover:bg-transparent hover:text-orange-500! hover:no-underline! 
+            dark:hover:text-white! dark:hover:bg-transparent" />
+        <Link :to="routes.menu || ''" :text="viewMenuText" :iconEnd="true"
+          class="border-none text-emerald-500! dark:text-emerald-400! py-0! sm:px-0! hover:text-emerald-600! dark:hover:text-emerald-500!">
+          <template #icon>
+            <IconRightArrow />
+          </template>
+        </Link>
       </div>
-    </template>
-    <template #B>
-      <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full">
-        <div class="rounded-full shadow-lg shadow-orange-400 hover-scale-2">
-          <img :src="eggDishPhoto" alt="A photo of a delicious meal prepared with boiled eggs and fresh ingredients" loading="eager"
-            class="circular-image size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem]">
-        </div>
+    </div>
+    <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full">
+      <div class="rounded-full shadow-lg shadow-orange-400 hover-scale-2">
+        <img :src="eggDishPhoto" alt="A photo of a delicious meal prepared with boiled eggs and fresh ingredients"
+          loading="eager" class="circular-image size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem]">
       </div>
-    </template>
-  </ContentBlock>
+    </div>
+  </section>
 </template>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ContentBlock from '@/components/shared/ContentBlock.vue';
-import Link from '@/components/utils/Link.vue';
 import veganSalad from '@/assets/images/home/vegan-salad.jpg';
 
 
@@ -11,20 +9,17 @@ const subtext: string = 'A local George Town favorite, serving up delicious meal
 </script>
 
 <template>
-  <ContentBlock class="sm:px-6 px-4 pb-4 mb-4 sm:!mb-8">
-    <template #A>
-      <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
-        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
-        <p class="text-description">{{ subtext }}</p>
+  <section class="section-container pb-4! mb-4 sm:mb-8!">
+    <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
+      <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
+      <p class="text-description">{{ subtext }}</p>
+    </div>
+
+    <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full !p-5">
+      <div class="rounded-full shadow-lg shadow-orange-400">
+        <img :src="veganSalad" alt="A photo of a delicious vegan salad" loading="lazy"
+          class="rounded-full size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem] object-cover">
       </div>
-    </template>
-    <template #B>
-      <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full !p-5">
-        <div class="rounded-full shadow-lg shadow-orange-400">
-          <img :src="veganSalad" alt="A photo of a delicious vegan salad" loading="lazy"
-            class="rounded-full size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem] object-cover">
-        </div>
-      </div>
-    </template>
-  </ContentBlock>
+    </div>
+  </section>
 </template>
