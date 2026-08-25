@@ -1,0 +1,1 @@
+import{S as e,_ as t,n,p as r,u as i,v as a}from"./index-eWBxToTE.js";var o={class:`about`},s=a({__name:`AboutView`,setup(a){return(a,s)=>(e(),r(`div`,o,[t(n),s[0]||=i(`h1`,{class:`text-center`},`About Fresco's`,-1)]))}});export{s as default};
