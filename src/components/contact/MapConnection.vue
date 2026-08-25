@@ -14,14 +14,14 @@ withDefaults(defineProps<MapConnectionProps>(), {
 </script>
 
 <template>
-  <section class="border-t border-[#e3ded3] bg-[#eeece5] px-4 py-4 sm:px-6 sm:py-6">
+  <section class="section-container border-t border-[#e3ded3] bg-[#eeece5] dark:bg-slate-400">
     <div
-      class="mx-auto flex max-w-6xl items-center justify-between gap-4"
+      class="flex items-center justify-between gap-4"
     >
       <!-- Text -->
       <div class="min-w-0">
         <h2
-          class="font-serif text-xl leading-tight text-gray-900 sm:text-2xl"
+          class="page-heading"
         >
           {{ title }}
         </h2>
@@ -33,12 +33,12 @@ withDefaults(defineProps<MapConnectionProps>(), {
 
       <!-- Map -->
       <div
-        class="shrink-0 overflow-hidden rounded-sm border border-gray-500 bg-white p-1 shadow-sm"
+        class="overflow-hidden rounded-sm border border-gray-500 bg-white p-1 shadow-sm"
       >
         <img
           :src="mapImageSrc"
           :alt="mapAlt"
-          class="h-[84px] w-[140px] object-cover sm:h-[120px] sm:w-[200px]"
+          class="h-[84px] w-[140px] object-cover sm:h-[168px] sm:w-[280px]"
         />
       </div>
     </div>

@@ -31,7 +31,7 @@ const location = {
       />
 
       <Amenities />
-
+      
       <MapConnection :map-image-src="location.map" />
     </div>
     <NewsletterFooter />

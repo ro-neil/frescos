@@ -24,24 +24,24 @@ withDefaults(defineProps<LocationHoursProps>(), {
 </script>
 
 <template>
-  <section class="bg-[#f7f4eb] px-4 py-5 sm:px-6 sm:py-7">
+  <section class="section-container items-start!">
     <div class="flex flex-col gap-5 sm:gap-8">
       <!-- Heading -->
       <header class="mb-4 sm:mb-8 lg:mb-8">
-        <h2 class="page-heading">
+        <h2 class="page-heading text-dark">
           {{ heading }}
         </h2>
 
         <div class="flex flex-col gap-3">
           <div class="flex items-center gap-2 sm:gap-4">
             <MapPinnedIcon />
-            <address class="leading-tight text-gray-800">
+            <address class="leading-tight">
               {{ address }}
             </address>
           </div>
           <div class="flex gap-2 sm:gap-4">
             <Clock />
-            <p class="italic leading-tight text-gray-800">
+            <p class="italic leading-tight">
               {{ hours }}
             </p>
           </div>

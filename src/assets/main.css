@@ -48,7 +48,7 @@
 }
 
 .text-light {
-  @apply text-slate-50 dark:text-slate-900;
+  @apply text-slate-50;
 }
 
 a {
