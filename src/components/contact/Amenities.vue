@@ -33,15 +33,15 @@ const amenities: Amenity[] = [
 
 <template>
   <section class="bg-[#f7f4eb] px-4 pb-5 sm:px-6 sm:pb-7">
-    <div class="mx-auto max-w-6xl">
+    <div class="w-full">
       <h2
-        class="mb-4 font-serif text-xl leading-tight text-gray-900 sm:text-2xl"
+        class="mb-4 sm:mb-6 lg:mb-8 font-serif text-xl leading-tight text-gray-900 sm:text-2xl"
       >
         Amenities
       </h2>
 
       <div
-        class="grid grid-cols-4 gap-1.5 sm:grid-cols-4 sm:gap-3 md:max-w-2xl"
+        class="grid grid-cols-4 gap-1.5 sm:grid-cols-4 sm:gap-3"
       >
         <article
           v-for="amenity in amenities"

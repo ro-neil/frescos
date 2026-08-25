@@ -32,7 +32,7 @@
 }
 
 .text-description {
-  @apply text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed font-medium;
+  @apply text-base sm:text-lg lg:text-xl max-w-lg mb-4 tracking-tight leading-relaxed;
 }
 
 .circular-image {

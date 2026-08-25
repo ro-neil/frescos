@@ -8,11 +8,11 @@ import outdoorDining from '@/assets/images/catering/outdoor-dining.jpg';
 
 const location = {
   heading: 'Location & Hours',
-  subheading: 'The island oasis on Grand Cayman.',
+  subheading: 'Join us at our island oasis on Grand Cayman.',
   image: outdoorDining,
   map: outdoorDining,
   address: 'George Town, Grand Cayman',
-  hours: 'Open Daily | 7:00 AM - 8:00 PM',
+  hours: '7:00 AM - 8:00 PM',
   serviceHours: '(Breakfast is served 7:30 AM - 11:00 AM)',
 }
 </script>
