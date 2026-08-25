@@ -2,10 +2,9 @@
 import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import veganSalad from '@/assets/images/home/vegan-salad.jpg';
-import Leadtext from '@/components/shared/Leadtext.vue';
 
 
-const leadText: string = '@2026 Copyright';
+const pageHeading: string = '@2026 Copyright';
 const subtext: string = 'A local George Town favorite, serving up delicious meals in a relaxed and welcoming atmosphere for over 20\
       years. Our menu features a fusion of caribbean and international flavors, crafted with fresh, locally sourced\
       ingredients.';
@@ -15,7 +14,7 @@ const subtext: string = 'A local George Town favorite, serving up delicious meal
   <ContentBlock class="sm:px-6 px-4 pb-4 mb-4 sm:!mb-8">
     <template #A>
       <div class="flex flex-col gap-4 justify-center items-center text-center w-full sm:items-start sm:text-left">
-        <Leadtext :text="leadText" class=""/>
+        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
         <p class="text-description">{{ subtext }}</p>
       </div>
     </template>

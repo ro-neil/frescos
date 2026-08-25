@@ -3,9 +3,8 @@ import ContentBlock from '@/components/shared/ContentBlock.vue';
 import salmonDishPhoto from '@/assets/images/home/salmon-dish-1.jpg';
 import salmonDishPhoto2 from '@/assets/images/home/salmon-dish-2.jpg';
 import salmonDishPhoto3 from '@/assets/images/home/salmon-dish-3.jpg';
-import Leadtext from '@/components/shared/Leadtext.vue';
 
-const leadtext: string = 'Experience Real Taste';
+const pageHeading: string = 'Experience Real Taste';
 const subtext1: string = 'We offer a wide range of local specialties alongside international favorites, ensuring there is something to love for everyone, including dedicated vegetarian and vegan dishes.';
 const subtext2: string = 'Our casual, cozy, family-friendly indoor and outdoor seating options welcome tourists and locals alike.';
 </script>
@@ -28,7 +27,7 @@ const subtext2: string = 'Our casual, cozy, family-friendly indoor and outdoor s
 
     <template #B>
       <div class="flex flex-col gap-2 justify-center items-center text-center lg:text-left lg:items-start lg:pl-8 w-full">
-        <Leadtext :text="leadtext" />
+        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
         <p class="text-description">{{ subtext1 }}</p>
         <p class="text-description">{{ subtext2 }}</p>
         <div class="mt-4! flex justify-center">

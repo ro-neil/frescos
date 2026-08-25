@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
-import Leadtext from '@/components/shared/Leadtext.vue';
 import IconNorthEastArrow from '@/components/icons/IconNorthEastArrow.vue';
 import { routeMap } from '@/router/index.ts'
 
 const bookingRoute: string = String(routeMap.booking);
-const leadText: string = "Host Your Next Gathering With Us";
+const pageHeading: string = "Host Your Next Gathering With Us";
 const subtext1: string = 'Event Spotlight';
 const subtext2: string = "From intimate group celebrations in our comfy, air-conditioned \
 Private Dining Room, to large-scale island catering, \
@@ -33,7 +32,7 @@ const shortLinks = [
     <template #A>
       <div class="flex flex-col gap-4 justify-center items-center text-center sm:text-left sm:items-start w-full">
         <p class="text-description font-bold! text-base! sm:text-lg! uppercase">{{ subtext1 }}</p>
-        <Leadtext :text="leadText" class="" />
+        <h2 class="page-heading text-light">{{ pageHeading }}</h2>
         <p class="text-description">{{ subtext2 }}</p>
         <p class="text-description !mb-3 tracking-wide decoration-orange-400 underline decoration-wavy underline-offset-4">{{ subtext3 }}</p>
         <Link :to="bookingRoute" :text="exploreCateringText"

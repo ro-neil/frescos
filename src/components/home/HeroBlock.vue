@@ -2,7 +2,6 @@
 import ContentBlock from '@/components/shared/ContentBlock.vue';
 import Link from '@/components/utils/Link.vue';
 import eggDishPhoto from '@/assets/images/home/egg-dish.jpg';
-import Leadtext from '@/components/shared/Leadtext.vue';
 import IconRightArrow from '@/components/icons/IconRightArrow.vue';
 import { routeMap } from '@/router/index.ts'
 
@@ -10,7 +9,7 @@ const routes: Record<string, string> = {
   booking: routeMap.booking || '',
   menu: routeMap.menu || '',
 };
-const leadText: string = 'Island Flavor Meets Casual Elegance';
+const pageHeading: string = 'Island Flavor Meets Casual Elegance';
 const subtext: string = 'A local George Town favorite, serving up delicious meals in a relaxed and welcoming atmosphere for over 20\
       years. Our menu features a fusion of caribbean and international flavors, crafted with fresh, locally sourced\
       ingredients.';
@@ -22,7 +21,7 @@ const viewMenuText: string = 'View Menu';
   <ContentBlock class="pt-8! lg:pt-16! sm:px-6 px-4 md:gap-8">
     <template #A>
       <div class="flex flex-col gap-2 justify-center items-center text-center w-full sm:items-start sm:text-left">
-        <Leadtext :text="leadText" class=""/>
+        <h2 class="page-heading text-dark">{{ pageHeading }}</h2>
         <p class="text-description">{{ subtext }}</p>
         <div class="controls !mt-5 flex flex-col gap-4 items-center">
           <Link :to="routes.booking || ''" :text="bookEventText" 
@@ -39,7 +38,7 @@ const viewMenuText: string = 'View Menu';
     </template>
     <template #B>
       <div class="flex items-center justify-center sm:justify-end order-first sm:order-last w-full">
-        <div class="rounded-full hover-scale-2 shadow-lg shadow-orange-400">
+        <div class="rounded-full shadow-lg shadow-orange-400 hover-scale-2">
           <img :src="eggDishPhoto" alt="A photo of a delicious meal prepared with boiled eggs and fresh ingredients" loading="eager"
             class="circular-image size-[16rem] md:size-[18rem] lg:size-[30rem] xl:size-[36rem]">
         </div>

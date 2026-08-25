@@ -20,11 +20,11 @@
 }
 
 .page-heading-2 {
-  @apply text-4xl md:text-5xl lg:text-7xl font-bold mb-2 md:mb-3 lg:mb-6 text-shadow-xs text-shadow-gray-800 tracking-tighter;
+  @apply text-4xl md:text-5xl font-bold mb-2 md:mb-3 lg:mb-6 text-shadow-xs text-shadow-gray-800 tracking-tighter;
 }
 
 .page-heading {
-  @apply text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-50 mb-3 tracking-tight;
+  @apply text-4xl md:text-5xl lg:text-7xl font-serif mb-3 tracking-tight mb-2 md:mb-3 lg:mb-6;
 }
 
 .text-description {
@@ -37,6 +37,14 @@
 
 .hover-scale-2 {
   @apply transform transition duration-500 hover:scale-[1.02];
+}
+
+.text-dark {
+  @apply text-slate-900 dark:text-slate-50;
+}
+
+.text-light {
+  @apply text-slate-50 dark:text-slate-900;
 }
 
 a {
