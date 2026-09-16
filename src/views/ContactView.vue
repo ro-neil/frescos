@@ -2,7 +2,6 @@
 import SiteNavigation from '@/components/shared/SiteNavigation.vue';
 import Copyright from '@/components/shared/Copyright.vue';
 import ContactForm from '@/components/contact/ContactForm.vue';
-import LocationHours from '@/components/contact/LocationHours.vue';
 import Amenities from '@/components/contact/Amenities.vue';
 import MapConnection from '@/components/contact/MapConnection.vue';
 import outdoorDining from '@/assets/images/catering/outdoor-dining.jpg';
