@@ -32,7 +32,7 @@ const amenities: Amenity[] = [
 </script>
 
 <template>
-  <section class="section-container bg-[#f7f4eb] dark:bg-slate-800 px-4 pb-5 sm:px-6 sm:pb-7">
+  <section class="section-container">
     <div class="w-full">
       <h2
         class="mb-4! lg:mb-8 font-serif text-xl leading-tight text-dark dark:text-light sm:text-2xl"

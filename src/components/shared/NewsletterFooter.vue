@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import Copyright from './Copyright.vue'
 
 
 // Define props for full extensibility
@@ -69,11 +70,7 @@ const handleSubmit = () => {
         
       </form>
 
-      <div class="border-t border-slate-200 dark:border-slate-800 pt-3 mt-4! text-center">
-        <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
-          {{ copyright }}
-        </p>
-      </div>
+      <Copyright :text="copyright" class="mt-4!" />
       
     </div>
   </footer>
